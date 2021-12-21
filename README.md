@@ -14,3 +14,6 @@ This script will iterate thorugh a folder and return a worksheet if a specific v
 
 ### Extract Filenames
 This script searches a directory and returns all of the filenames within a CSV format for manipulation
+
+### Find Duplicates
+Work In Progress, When complete will be able to see if there are duplicates contained within a group of rows dependant on a specific shared cell value

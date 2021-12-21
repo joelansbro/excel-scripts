@@ -7,7 +7,7 @@ filePath = input("Enter the filename below\n")
 
 f = csv.writer(open("Filelist.csv", "W"))
 
-directories = os.walk(filepath, topdown=True)
+directories = os.walk(filePath, topdown=True)
 for root, dirs, files in directories:
     for file in files:
         f.writerow([file])

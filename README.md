@@ -17,3 +17,6 @@ This script searches a directory and returns all of the filenames within a CSV f
 
 ### Find Duplicates
 Work In Progress, When complete will be able to see if there are duplicates contained within a group of rows dependant on a specific shared cell value
+
+### Clean Dimensions
+Work In Progress, finds specified columns and sorts based upon maximum minimum and median values

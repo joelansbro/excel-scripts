@@ -3,9 +3,9 @@ import openpyxl
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import PatternFill
 
-file = input("Enter file name here: \n") + ".xlsx"
-wb = openpyxl.load_workbook(file, read_only=False)
-ws = wb.active
+# file = input("Enter file name here: \n") + ".xlsx"
+# wb = openpyxl.load_workbook(file, read_only=False)
+# ws = wb.active
 
  
 # stores the range products and dumps when complete the duplicate check
@@ -28,6 +28,13 @@ def getStartColumn(column_entry):
         if (ws.cell == column_entry):
             for cell in col:
                 sheetRange.append(cell.value)
+
+# find column based on name
+def findCol(col_name, ws):
+    for row in range(1, ws.max_column):
+        if(ws.cell(1,row).value == col_name):
+            return ws.cell(1,row).value
+
 
 # to iterate through the rows
 def iterateCols(column selection){
@@ -66,3 +73,8 @@ ws.conditional_formatting.add(queryCol, FormulaRule(formula=['COUNTIF(G:G,G2)>1'
 
 newSave = input("Save new book as: ")
 wb.save(newSave + '.xlsx')
+
+
+if __name__ in '__main__':
+    wb = openpyxl.load_workbook(input("absolute path of file") + ".xlsx", read_only=False)
+    ws = wb.active

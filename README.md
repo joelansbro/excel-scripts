@@ -11,3 +11,6 @@ You can find the openpyxl [documentation here](https://openpyxl.readthedocs.io/e
 
 ### Excel Reader
 This script will iterate thorugh a folder and return a worksheet if a specific value is contained within
+
+### Extract Filenames
+This script searches a directory and returns all of the filenames within a CSV format for manipulation

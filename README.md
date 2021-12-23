@@ -4,6 +4,7 @@ A small selection of python scripts for automating several manual tasks
 
 ```
 $ pip install openpyxl
+$ pip install pandas
 ```
 You can find the openpyxl [documentation here](https://openpyxl.readthedocs.io/en/stable/)
 
@@ -20,3 +21,6 @@ Work In Progress, When complete will be able to see if there are duplicates cont
 
 ### Clean Dimensions
 Finds specified columns and sorts based upon maximum minimum and median values
+
+### Find empty values in columns
+Work in Progress - Retrieves the empty values in a data sheet and returns them
